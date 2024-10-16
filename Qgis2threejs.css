@@ -12,8 +12,8 @@ body {
 
 #view {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 200% !important;
+  height: 200% !important;
 }
 
 #view.sky {
@@ -104,6 +104,7 @@ body {
   height: 24px;
   padding: 6px;
   cursor: pointer;
+  box-sizing: unset !important;
 }
 
 #toolbtns > div:hover {
@@ -483,9 +484,76 @@ table.measure tr > td:nth-child(2) {
   content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBkPSJNMzYuNyAxOC4yIDY4LjUgNTAgMzYuNyA4MS44IiBzdHJva2U9IiMwMDAiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS13aWR0aD0iMTQiIGZpbGw9Im5vbmUiIGNsYXNzPSJsYXllciIvPjwvc3ZnPg==");
 }
 
-#searchInput, #SearchButton{
-	position: absolute;
-	top: 10px;
-    left: 10px;
-    z-index: 1;
-};
+/*bulelani search bar button styling*/
+#searchbar-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#searchbar-div {
+  width: 50%;
+}
+.input-group-prepend button{
+  margin-right: 10px;
+}
+/*End code*/
+
+/*Bulelani Styled the menu button*/
+#menubar-container{
+  position: absolute !important;
+  top: 1px;  
+  right: 5px; 
+}
+#menu-btn{
+  background-color: black !important; 
+  color: white !important; 
+  border: 1px solid black !important; 
+  transition: background-color 0.3s ease !important;
+}
+#menu-btn:hover{
+  background-color: grey !important; 
+  color: white !important;
+}
+/*End Code*/
+/*Style Layer Panel*/
+#layerpanelbtn-container{
+  position: absolute;
+  top: 50px !important;
+  left: 10px !important;
+  z-index: 500 !important;
+}
+
+.btn-group-vertical .btn {
+  width: 160px !important; 
+  margin-bottom: 2px !important; 
+  transition: background-color 0.3s ease !important; 
+}
+
+.btn-group-vertical .btn:hover {
+  background-color: grey; /* Change background on hover */
+  color: white
+}
+/*End Code*/
+
+/*Style the about model btn*/
+#aboutbtn-container {
+  position: absolute;
+  bottom: 10px !important;  /* Position the button 10px from the bottom */
+  left: 10px !important;    /* Position the button 10px from the left */
+  z-index: 1000; /* Ensure the button stays above other elements */
+}
+
+.btn-group .btn {
+  background-color: #007bff;  /* Bootstrap's primary blue color */
+  color: white;               /* White text for visibility */
+  padding: 10px 20px;         /* Add some padding for a larger button */
+  border-radius: 5px;         /* Smooth corners */
+  text-decoration: none;      /* Remove underline from the link */
+}
+
+.btn-group .btn:hover {
+  background-color: gray;  /* Darker blue on hover */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+/*End Code*/

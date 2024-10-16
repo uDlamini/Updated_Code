@@ -11,10 +11,18 @@
   left: 36px;
 }
 </style>
+<!--Bulelani added bootstrap style sheet-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--end new code-->
 <script src="./threejs\three.min.js"></script>
 <script src="./threejs/OrbitControls.js"></script>
 <script src="./threejs/ViewHelper.js"></script>
 <script src="./Qgis2threejs.js"></script>
+<!--Bulelani added bootstrap library-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--end new code-->
 </head>
 <body>
 <div id="view">
@@ -110,6 +118,55 @@
   </div>
   <div id="nextbtn"></div>
 </div>
+
+<!--Bulelani added search bar-->
+<div id="searchbar-container">
+<div id="searchbar-div" class="input-group mb-3">
+  <div class="input-group-prepend">
+    <button class="btn btn-outline-secondary" type="button">Search</button>
+  </div>
+  <input type="text" class="form-control" placeholder="Search here..." aria-label="" aria-describedby="basic-addon1">
+</div>
+</div>
+<!--end search bar-->
+
+<!--Bulelani Added menu bar-->
+<div id="menubar-container">
+<div class="menu-btn" role="group">
+<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Menu
+</button>
+<ul class="dropdown-menu">
+  <li><a class="dropdown-item" href="#">Home</a></li>
+  <li><a class="dropdown-item" href="#">About Us</a></li>
+  <li><a class="dropdown-item" href="#">Services</a></li>
+  <li> <a class="dropdown-item" href="#">Contact</a></li>
+  <li><a class="dropdown-item" href="#">Help</a></li>
+</ul>
+</div>
+</div>
+<!--End menu bar-->
+
+<!--Bulelani Added Layer Panel-->
+<!--Campus and Faculty Layer-->
+<div id="layerpanelbtn-container"></div>
+<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Explore Campus
+</button>
+<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  Faculties
+</button>
+</div>
+<!--End Layer Panel-->
+
+<!--Bulelani Added About 3D model button-->
+<div id="aboutbtn-container"></div>
+<div class="btn-group">
+  <a href="#" class="btn btn primary active" aria-current="page">About The Model</a>
+</div>
+<!--End Code-->
+
 
 <script>
 Q3D.Config.allVisible = true;
