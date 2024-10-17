@@ -93,9 +93,10 @@ body {
 
 #toolbtns {
   position: absolute;
-  margin: 1px;
+  bottom: 10px;
+  right: 10px;  
+  margin: 0;    
   box-shadow: 1px 2px 6px rgba(0,0,0,0.2);
-  float: left;
 }
 
 #toolbtns > div {
@@ -517,14 +518,16 @@ table.measure tr > td:nth-child(2) {
 }
 /*End Code*/
 /*Style Layer Panel*/
-#layerpanelbtn-container{
+#button-group{
   position: absolute;
-  top: 50px !important;
-  left: 10px !important;
-  z-index: 500 !important;
+  top: 10px;   
+  left: 10px;   
+  z-index: 1000;
+  box-shadow: 1px 2px 6px rgba(0,0,0,0.2);
 }
 
 .btn-group-vertical .btn {
+  display: flex;
   width: 160px !important; 
   margin-bottom: 2px !important; 
   transition: background-color 0.3s ease !important; 
@@ -532,16 +535,19 @@ table.measure tr > td:nth-child(2) {
 
 .btn-group-vertical .btn:hover {
   background-color: grey; /* Change background on hover */
-  color: white
+  color: white;
+}
+.dropdown-menu{
+  z-index: 1001;
 }
 /*End Code*/
 
 /*Style the about model btn*/
 #aboutbtn-container {
   position: absolute;
-  bottom: 10px !important;  /* Position the button 10px from the bottom */
-  left: 10px !important;    /* Position the button 10px from the left */
-  z-index: 1000; /* Ensure the button stays above other elements */
+  bottom: 10px !important; 
+  right: 10px !important;    
+  z-index: 1000; 
 }
 
 .btn-group .btn {

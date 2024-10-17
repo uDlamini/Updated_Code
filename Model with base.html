@@ -18,6 +18,7 @@
 <script src="./threejs/OrbitControls.js"></script>
 <script src="./threejs/ViewHelper.js"></script>
 <script src="./Qgis2threejs.js"></script>
+<script src="./Qgis2threejs.css"></script>
 <!--Bulelani added bootstrap library-->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -149,14 +150,35 @@
 
 <!--Bulelani Added Layer Panel-->
 <!--Campus and Faculty Layer-->
-<div id="layerpanelbtn-container"></div>
-<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-    Explore Campus
-</button>
-<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-  Faculties
-</button>
+<div id="layerpanel">
+  <!-- Layer panel content here -->
+</div>
+
+<div id="button-group" class="btn-group-vertical">
+  <!-- Explore Campus button with dropdown -->
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      Explore Campus
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Campus Map</a>
+      <a class="dropdown-item" href="#">Tour</a>
+      <a class="dropdown-item" href="#">Facilities</a>
+    </div>
+  </div>
+
+  <!-- Faculties button with dropdown -->
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      Faculties
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Science</a>
+      <a class="dropdown-item" href="#">Engineering</a>
+      <a class="dropdown-item" href="#">Arts</a>
+      <a class="dropdown-item" href="#">Commerce</a>
+    </div>
+  </div>
 </div>
 <!--End Layer Panel-->
 
