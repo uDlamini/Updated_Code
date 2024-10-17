@@ -132,9 +132,8 @@
 <!--end search bar-->
 
 <!--Bulelani Added menu bar-->
-<div id="menubar-container">
-<div class="menu-btn" role="group">
-<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+<div id="menubar-container" class="dropdown">
+<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Menu
 </button>
 <ul class="dropdown-menu">
@@ -144,7 +143,6 @@
   <li> <a class="dropdown-item" href="#">Contact</a></li>
   <li><a class="dropdown-item" href="#">Help</a></li>
 </ul>
-</div>
 </div>
 <!--End menu bar-->
 
@@ -182,13 +180,41 @@
 </div>
 <!--End Layer Panel-->
 
-<!--Bulelani Added About 3D model button-->
-<div id="aboutbtn-container"></div>
-<div class="btn-group">
-  <a href="#" class="btn btn primary active" aria-current="page">About The Model</a>
+<!--Bulelani Added User specification bar-->
+<div id="user-list-container">
+  <h3> Users List</h3>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+      <label class="form-check-label" for="firstRadio">Visitors</label>
+    </li>
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+      <label class="form-check-label" for="secondRadio">Returning Student</label>
+    </li>
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+      <label class="form-check-label" for="thirdRadio">First Timer</label>
+    </li>
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+      <label class="form-check-label" for="thirdRadio">Senior Student</label>
+    </li>
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+      <label class="form-check-label" for="thirdRadio">Personnel</label>
+    </li>
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+      <label class="form-check-label" for="thirdRadio">Management</label>
+    </li>
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+      <label class="form-check-label" for="thirdRadio">Event Planner</label>
+    </li>
+  </ul>
 </div>
-<!--End Code-->
-
+<!--End code-->
 
 <script>
 Q3D.Config.allVisible = true;
