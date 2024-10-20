@@ -486,42 +486,73 @@ table.measure tr > td:nth-child(2) {
 }
 
 /*bulelani search bar button styling*/
-#searchbar-container{
+#searchbar-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  top: 1%; /* Position it slightly below the top of the page */
+  position: absolute; /* Keep it absolute to position over the menu */
+  z-index: 2; /* Set a higher z-index to ensure it appears on top */
 }
+
 #searchbar-div {
   width: 50%;
 }
-.input-group-prepend button{
+
+.input-group-prepend button {
   margin-right: 10px;
 }
 /*End code*/
 
-/*Bulelani Styled the menu button*/
-#menubar-container{
-  position: absolute !important;
-  top: 10px;  
-  right: 1px; 
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
 }
-#menu-btn{
-  background-color: black !important; 
-  color: white !important; 
-  border: 1px solid black !important; 
-  transition: background-color 0.3s ease !important;
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
 }
-#menu-btn:hover{
-  background-color: grey !important; 
-  color: white !important;
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #046aaa;
+  color: white;
 }
 /*End Code*/
+
+
 /*Style Layer Panel*/
 #button-group{
   position: absolute;
-  top: 10px;   
-  left: 1px;   
+  top: 100px;   
+  left: 0px;
+  margin-left: 0px;   
   z-index: 1000;
   box-shadow: 1px 2px 6px rgba(0,0,0,0.2);
 }
@@ -545,26 +576,30 @@ table.measure tr > td:nth-child(2) {
 /*Style the Users List*/
 #user-list-container {
   position: absolute;
-  margin-top: 50px !important;              
-  left: 1px ;                    
-  width: 180px !important;         
+  top: 7.3%;        
+  left: 0;         
+  margin-left: 0px;
 }
 
-h3 {
-  margin-bottom: 2px;   
-  font-size: 1.25rem;    
-  color: #333;          
+.dropdown-menu {
+  padding: 0;
+  left:0% !important;
+  margin-left: 0px !important;
 }
 
-.list-group-item {
-  padding: 10px;
-  background-color: rgba(75, 141, 241, 0.753) !important;  
-  color: white;
-  transition: background-color 0.3s;      
-}     
+.form-group {
+  margin-bottom: 0.5rem;
+}
 
-.list-group-item:hover{
-background-color: grey;
+.form-check {
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+.form-check-input {
+  margin-left: 0;
+  margin-right: 0.5rem;
 }
 /*End code*/
 

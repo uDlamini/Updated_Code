@@ -14,6 +14,9 @@
 <!--Bulelani added bootstrap style sheet-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!--end new code-->
+<!--Bulelani Added a stylesheet for menu btn-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--End Code-->
 <script src="./threejs\three.min.js"></script>
 <script src="./threejs/OrbitControls.js"></script>
 <script src="./threejs/ViewHelper.js"></script>
@@ -132,18 +135,22 @@
 <!--end search bar-->
 
 <!--Bulelani Added menu bar-->
-<div id="menubar-container" class="dropdown">
-<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Menu
-</button>
-<ul class="dropdown-menu">
-  <li><a class="dropdown-item" href="#">Home</a></li>
-  <li><a class="dropdown-item" href="#">About Us</a></li>
-  <li><a class="dropdown-item" href="#">Services</a></li>
-  <li> <a class="dropdown-item" href="#">Contact</a></li>
-  <li><a class="dropdown-item" href="#">Help</a></li>
-</ul>
-</div>
+<!-- Top Navigation Menu -->
+<div class="menu-container">
+
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+    <a href="#home" class="active">University of Pretoria</a>
+    <div id="myLinks">
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  </div>
 <!--End menu bar-->
 
 <!--Bulelani Added Layer Panel-->
@@ -182,37 +189,39 @@
 
 <!--Bulelani Added User specification bar-->
 <div id="user-list-container">
-  <h3> Users List</h3>
-  <ul class="list-group">
-    <li class="list-group-item">
-      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
-      <label class="form-check-label" for="firstRadio">Visitors</label>
-    </li>
-    <li class="list-group-item">
-      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
-      <label class="form-check-label" for="secondRadio">Returning Student</label>
-    </li>
-    <li class="list-group-item">
-      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
-      <label class="form-check-label" for="thirdRadio">First Timer</label>
-    </li>
-    <li class="list-group-item">
-      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
-      <label class="form-check-label" for="thirdRadio">Senior Student</label>
-    </li>
-    <li class="list-group-item">
-      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
-      <label class="form-check-label" for="thirdRadio">Personnel</label>
-    </li>
-    <li class="list-group-item">
-      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
-      <label class="form-check-label" for="thirdRadio">Management</label>
-    </li>
-    <li class="list-group-item">
-      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
-      <label class="form-check-label" for="thirdRadio">Event Planner</label>
-    </li>
-  </ul>
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Specify User
+    </button>
+    <div class="dropdown-menu">
+      <!--1st Radio Button-->
+    <div class="form-group">
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Visitors
+  </label>
+</div>  
+</div>
+      <!--2nd Radio Button-->
+      <div class="form-group">
+     <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios2">
+    Senior Student
+  </label>
+</div> 
+</div>
+<!--End 2nd Radio Button-->
+
+      <!--New Radio Button-->
+      <div class="form-group">
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios3">
+    First Timer
+  </label>
+</div> 
 </div>
 <!--End code-->
 
