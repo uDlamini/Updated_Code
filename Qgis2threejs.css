@@ -485,23 +485,43 @@ table.measure tr > td:nth-child(2) {
   content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBkPSJNMzYuNyAxOC4yIDY4LjUgNTAgMzYuNyA4MS44IiBzdHJva2U9IiMwMDAiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS13aWR0aD0iMTQiIGZpbGw9Im5vbmUiIGNsYXNzPSJsYXllciIvPjwvc3ZnPg==");
 }
 
-/*bulelani search bar button styling*/
-#searchbar-container {
+/*Search bar Style*/
+.form-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  top: 1%; /* Position it slightly below the top of the page */
-  position: absolute; /* Keep it absolute to position over the menu */
-  z-index: 2; /* Set a higher z-index to ensure it appears on top */
+  margin: 10px 0;
 }
 
-#searchbar-div {
-  width: 50%;
+/* Style the search input field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  width: 80%;
+  background: #f1f1f1;
 }
 
-.input-group-prepend button {
-  margin-right: 10px;
+/* Style the submit button */
+form.example button {
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 /*End code*/
 
@@ -509,7 +529,7 @@ table.measure tr > td:nth-child(2) {
 /* Style the navigation menu */
 .sidebar {
   height: 100%;
-  width: 0;
+  width: 0; /* Set to 0 for collapsed state */
   position: fixed;
   z-index: 1;
   top: 0;
@@ -520,6 +540,7 @@ table.measure tr > td:nth-child(2) {
   padding-top: 60px;
 }
 
+/* Sidebar links */
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -533,6 +554,7 @@ table.measure tr > td:nth-child(2) {
   color: grey;
 }
 
+/* Close button */
 .sidebar .closebtn {
   position: absolute;
   top: 0;
@@ -541,6 +563,7 @@ table.measure tr > td:nth-child(2) {
   margin-left: 50px;
 }
 
+/* Menu button */
 .openbtn {
   font-size: 20px;
   cursor: pointer;
@@ -554,6 +577,7 @@ table.measure tr > td:nth-child(2) {
   background-color: #444;
 }
 
+/* Main content transition */
 #main {
   transition: margin-left .5s;
   padding: 16px;
@@ -562,30 +586,8 @@ table.measure tr > td:nth-child(2) {
 
 
 /*Style Layer Panel*/
-#button-group{
-  position: absolute;
-  top: 100px;   
-  left: 0px;
-  margin-left: 0px;   
-  z-index: 1000;
-  box-shadow: 1px 2px 6px rgba(0,0,0,0.2);
-}
 
-.btn-group-vertical .btn {
-  display: flex;
-  width: 160px !important; 
-  margin-bottom: 2px !important; 
-  transition: background-color 0.3s ease !important; 
-}
-
-.btn-group-vertical .btn:hover {
-  background-color: grey; /* Change background on hover */
-  color: white;
-}
-.dropdown-menu{
-  z-index: 1001;
-}
-/*End Code*/
+/*End code*/
 
 /*Style the Users List*/
 #user-list-container {

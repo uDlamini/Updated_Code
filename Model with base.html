@@ -12,10 +12,11 @@
 }
 </style>
 <!--Bulelani added bootstrap style sheet-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<!--end new code-->
-<!--Bulelani Added a stylesheet for menu btn-->
 
+<!--end new code-->
+<!--Bulelani added w3 schools style sheet-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <!--End Code-->
 <script src="./threejs\three.min.js"></script>
 <script src="./threejs/OrbitControls.js"></script>
@@ -23,10 +24,11 @@
 <script src="./Qgis2threejs.js"></script>
 <script src="./Qgis2threejs.css"></script>
 <!--Bulelani added bootstrap library-->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 <!--end new code-->
+<!--W3 schools libraries-->
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<!--End code-->
 </head>
 <body>
 <div id="view">
@@ -124,19 +126,18 @@
 </div>
 
 <!--Bulelani added search bar-->
-<div id="searchbar-container">
-<div id="searchbar-div" class="input-group mb-3">
-  <div class="input-group-prepend">
-    <button class="btn btn-outline-secondary" type="button">Search</button>
-  </div>
-  <input type="text" class="form-control" placeholder="Search here..." aria-label="" aria-describedby="basic-addon1">
-</div>
+<!-- The form -->
+<div class="form-container">
+  <form class="example" action="#">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i> Search</button>
+  </form>
 </div>
 <!--end search bar-->
 
 <!--Bulelani Added menu bar-->
 <div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="javascript:void(0)" class="closebtn">x</a>
   <a href="#">About</a>
   <a href="#">Services</a>
   <a href="#">Clients</a>
@@ -144,81 +145,11 @@
 </div>
 
 <div id="main">
-  <button class="openbtn" onclick="openNav()">☰Menu</button>
-
-  </div>
+  <button class="openbtn">☰ Menu</button>
+</div>
 <!--End menu bar-->
 
-<!--Bulelani Added Layer Panel-->
-<!--Campus and Faculty Layer-->
-<div id="layerpanel">
-  <!-- Layer panel content here -->
-</div>
-
-<div id="button-group" class="btn-group-vertical">
-  <!-- Explore Campus button with dropdown -->
-  <div class="btn-group">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-      Explore Campus
-    </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Campus Map</a>
-      <a class="dropdown-item" href="#">Tour</a>
-      <a class="dropdown-item" href="#">Facilities</a>
-    </div>
-  </div>
-
-  <!-- Faculties button with dropdown -->
-  <div class="btn-group">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-      Faculties
-    </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Science</a>
-      <a class="dropdown-item" href="#">Engineering</a>
-      <a class="dropdown-item" href="#">Arts</a>
-      <a class="dropdown-item" href="#">Commerce</a>
-    </div>
-  </div>
-</div>
-<!--End Layer Panel-->
-
-<!--Bulelani Added User specification bar-->
-<div id="user-list-container">
-  <div class="dropdown">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-      Specify User
-    </button>
-    <div class="dropdown-menu">
-      <!--1st Radio Button-->
-    <div class="form-group">
-    <div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-  <label class="form-check-label" for="exampleRadios1">
-    Visitors
-  </label>
-</div>  
-</div>
-      <!--2nd Radio Button-->
-      <div class="form-group">
-     <div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option1" checked>
-  <label class="form-check-label" for="exampleRadios2">
-    Senior Student
-  </label>
-</div> 
-</div>
-<!--End 2nd Radio Button-->
-
-      <!--New Radio Button-->
-      <div class="form-group">
-    <div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option1" checked>
-  <label class="form-check-label" for="exampleRadios3">
-    First Timer
-  </label>
-</div> 
-</div>
+<!--Layer Panel-->
 <!--End code-->
 
 <script>

@@ -4574,15 +4574,33 @@ CanvasRenderingContext2D.prototype.roundRect = function (x, y, w, h, r) {
 	return this;
 };
 
-//Bulelani Added fuctionlity for menu bar
-function openNav() {
-	document.getElementById("mySidebar").style.width = "250px";
-	document.getElementById("main").style.marginLeft = "250px";
-  }
+//Bulelani Added fuctionlity for search bar
+document.querySelector('form.example').addEventListener('submit', function(e) {
+	e.preventDefault();  
   
-  function closeNav() {
-	document.getElementById("mySidebar").style.width = "0";
-	document.getElementById("main").style.marginLeft= "0";
-  };
+	const searchValue = document.querySelector('input[name="search"]').value;
+	console.log("Search initiated for:", searchValue);
+  
+	// You can handle the search logic here (like filtering content or performing an API call)
+  });
+//Bulelani Menu functionality
+document.addEventListener("DOMContentLoaded", function() {
+    const openBtn = document.querySelector('.openbtn');
+    const closeBtn = document.querySelector('.closebtn');
+
+    if (openBtn) openBtn.addEventListener('click', openNav);
+    if (closeBtn) closeBtn.addEventListener('click', closeNav);
+
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+});
+
   
 
